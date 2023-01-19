@@ -37,6 +37,10 @@ license {
 
 cc_library_shared {
     name: "libcameraservice",
+    defaults: [
+        "camera_needs_miui_camera_mode_support_defaults",
+        "camera_needs_camera_needs_depth_sensor_override_defaults",
+    ],
 
     // Camera service source
 
